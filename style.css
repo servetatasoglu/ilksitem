@@ -1,0 +1,355 @@
+/* Genel Ayarlar */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  background-color: #fff;
+  color: #222;
+}
+
+/* Üst Başlık */
+.header-top {
+  background-color: #fff;
+  text-align: center;
+  padding: 15px 0 8px 0;
+  border-bottom: 3px solid #f47b20;
+}
+
+.header-top .logo {
+  width: 90px;
+  display: block;
+  margin: 0 auto 5px auto;
+}
+
+.header-top h1 {
+  color: #002b5c;
+  font-size: 22px;
+  margin: 0;
+  font-weight: 700;
+}
+
+/* Turuncu Menü */
+/* Turuncu Menü düzeni */
+.top-bar {
+  background-color: #f47b20;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 30px;
+  flex-wrap: wrap;
+}
+
+.menu-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 600;
+  font-size: 14px;
+  position: relative;
+  padding: 0 8px;
+  transition: opacity 0.3s;
+}
+
+.menu-links a:hover {
+  opacity: 0.8;
+}
+
+/* Menüdeki ayraç çizgileri */
+.menu-links a:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 14px;
+  width: 1px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Sağ taraftaki Arama Çubuğu */
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input {
+  width: 180px;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 15px 0 0 15px;
+  outline: none;
+  font-size: 13px;
+}
+
+.search-bar button {
+  background-color: #002b5c;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 0 15px 15px 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-bar button:hover {
+  background-color: #001c3e;
+}
+
+.top-bar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 600;
+  font-size: 14px;
+  position: relative;
+  padding: 0 10px;
+  transition: color 0.3s, opacity 0.3s;
+}
+
+/* Hover efekti */
+.top-bar a:hover {
+  opacity: 0.8;
+}
+
+/* Çentikler */
+.top-bar a:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 14px;
+  width: 1px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Alt Menü */
+.sub-menu {
+  text-align: center;
+  background-color: #fff;
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.sub-menu a {
+  color: #002b5c;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 500;
+  font-size: 14px;
+  position: relative;
+}
+
+.sub-menu a:hover {
+  color: #f47b20;
+}
+
+/* Sosyal Medya */
+.social {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.social img {
+  width: 28px;
+  height: 28px;
+  margin: 0 8px;
+  transition: transform 0.2s;
+}
+
+.social img:hover {
+  transform: scale(1.1);
+}
+
+/* Slider */
+.slider img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* İçerik */
+.content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+  background-color: #fafafa;
+}
+
+.box {
+  width: 30%;
+  min-width: 280px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  margin: 10px;
+}
+
+.box h2 {
+  color: #f47b20;
+  font-size: 17px;
+  border-bottom: 2px solid #f47b20;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.box li {
+  margin: 8px 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Etiketler */
+.etiket-yeni {
+  background-color: #f47b20;
+  color: white;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 5px;
+  border-radius: 3px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+/* Tüm Haberler Butonu */
+.btn-orange {
+  display: inline-block;
+  background-color: #f47b20;
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 4px;
+  text-align: center;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.btn-orange:hover {
+  background-color: #d46615;
+}
+/* Etkinlik Takvimi (ARÜ modeline uygun, daha küçük) */
+.event-calendar {
+  background-color: #fff;
+  width: 60%;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid #f47b20;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+}
+
+.calendar-header h2 {
+  color: #002b5c;
+  font-size: 18px;
+  margin: 0;
+}
+
+.calendar-header span {
+  color: #f47b20;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  text-align: center;
+}
+
+.day-name {
+  background-color: #f47b20;
+  color: white;
+  font-weight: 600;
+  padding: 6px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.day {
+  background-color: #f9f9f9;
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 13px;
+  border: 1px solid #eee;
+}
+
+.day.event {
+  background-color: #f47b20;
+  color: white;
+  font-weight: 600;
+}
+
+.day.empty {
+  background-color: transparent;
+  border: none;
+}
+
+/* Alt Bağlantılar (ikonlu) */
+.quick-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #fff;
+  padding: 20px 10px;
+  border-top: 2px solid #f47b20;
+}
+
+.quick-links a {
+  display: flex;
+  align-items: center;
+  color: #002b5c;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 13px;
+  margin: 6px 10px;
+  padding: 6px 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: 0.3s;
+  background-color: #fafafa;
+}
+
+.quick-links a img {
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+}
+
+.quick-links a:hover {
+  background-color: #f47b20;
+  color: white;
+  border-color: #f47b20;
+}
+
+.quick-links a:hover img {
+  filter: brightness(0) invert(1);
+}
+
+/* Footer */
+footer {
+  background-color: #002b5c;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 13px;
+  margin-top: 30px;
+}
